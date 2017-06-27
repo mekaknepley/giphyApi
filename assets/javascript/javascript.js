@@ -17,7 +17,7 @@ function addButton(topic) {
 function topicClicked(topic) {
     console.log(topic);
     //e313b0f01a3d441b8e00e11d6d09d377
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic +
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic +
         "&api_key=e313b0f01a3d441b8e00e11d6d09d377&limit=10&rating=pg-13";
     //console.log(queryURL);
     $.ajax({

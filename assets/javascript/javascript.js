@@ -39,7 +39,7 @@ function topicClicked(topic) {
                             "data-state='still' ></div>";
             console.log(imageHtml);
             $("#gifs-appear-here").append(imageHtml);
-         }
+        }
 
         $(".gif").click(function() {
             var state = $(this).attr("data-state");

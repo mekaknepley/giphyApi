@@ -32,7 +32,7 @@ function topicClicked(topic) {
             console.log(giphyImages[i].images.fixed_width.url);
             console.log(giphyImages[i].images.fixed_width_still.url);
             var imageHtml = "<div class='imageBox'>" + "Rating: " + giphyImages[i].rating + 
-                            "<img class='gif'" + 
+                            "<br><br><img class='gif'" + 
                             "src='" + giphyImages[i].images.fixed_width_still.url + "' " +
                             "data-still='" + giphyImages[i].images.fixed_width_still.url + "' " +
                             "data-animate='" + giphyImages[i].images.fixed_width.url + "' " +
@@ -55,7 +55,7 @@ function topicClicked(topic) {
 
 }
 
-//events
+//events(calls)
 $("#animalInputForm").submit(function(event) {
     var animalInput = $("#animalInput").val().trim();
     if (topics.indexOf(animalInput)=== -1) {
